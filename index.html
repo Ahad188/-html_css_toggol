@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dark mood</title>
+     <link rel="stylesheet" href="./css.css">
+     <script src="https://kit.fontawesome.com/a10194993b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <h1> Java script toggole Dark mood</h1>
+      
+     <!-- <i class="fa-duotone fa-sun" id="toggoldark"></i> -->
+     <i class="fa-solid fa-sun" id="toggoldark"></i>
+  
+     <script>
+          var toggol = document.getElementById("toggoldark");
+          var body = document.querySelector("body");
+
+          toggol.addEventListener("click",function(){
+               this.classList.toggle('fa-moon')
+               if(this.classList.toggle("fa-sun")){
+                    body.style.backgroundColor = 'white';
+                    body.style.color ='black';
+                    body.style.transition = '2s';
+               }else{
+                    body.style.backgroundColor = 'black';
+                    body.style.color ='white';
+                    body.style.transition = '2s';
+               }
+          })
+     </script>
+</body>
+</html>
